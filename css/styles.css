@@ -17,3 +17,10 @@ img {
     background-color: #F3F3F3;
     margin-top: 20px;
 }
+
+h1 {
+    font-family: poppins;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
