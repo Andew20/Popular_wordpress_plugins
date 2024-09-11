@@ -1,26 +1,128 @@
+.body {
+    
+}
+
+
+/* Стили для шапки и линии под ней */
 header {
-    background-color: #FFFFFF;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
+    background-color: #FFFFFF; /* Белый фон для шапки */
+    flex-direction: column; /* Элементы внутри шапки будут расположены по вертикали */
+    display: flex; /* Использование flexbox для шапки */
+    justify-content: center; /* Выравнивание содержимого по вертикали по центру */
+    align-items: center; /* Выравнивание содержимого по горизонтали по центру */
+    height: 80px; /* Высота шапки */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 .rectangle {
-    width: 552px;
-    height: 1px;
-    background-color: #F3F3F3;
-    margin-top: 20px;
+    width: 552px; /* Ширина линии */
+    height: 1px; /* Высота линии */
+    background-color: #F3F3F3; /* Цвет линии */
+    margin-top: 20px; /* Отступ сверху */
 }
 
+/* Стили для заголовка h1 */
 h1 {
-    font-family: poppins;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 0;
+    font-family: poppins; /* Шрифт для заголовка */
+    font-weight: 400; /* Толщина шрифта */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 0; /* Отступ сверху */
+}
+
+/* Основные стили для карточек */
+.cards, .cards2 {
+    display: flex; /* Использование flexbox для карточек */
+    align-items: flex-start; /* Выровнять элементы по верхнему краю */
+    flex-wrap: wrap; /* Перенос элементов на следующую строку */
+    height: 100%; /* Высота карточек */
+    justify-content: center; /* Выравнивание карточек по центру */
+    gap: 5px; /* Отступы между карточками */
+    
+}
+
+.main {
+    padding: 0 400px 0 400px;
+
+}
+/* Стили для заголовков h2 и h3 */
+h2, h3 {
+    margin: 0 0; /* Отступы вокруг заголовков */
+    padding-left: 5px; /* Отступ слева */
+    font-family: poppins; /* Шрифт для заголовков */
+    font-weight: 300; /* Толщина шрифта */
+}
+
+h3 {
+    color: #489DFF; /* Цвет текста для h3 */
+}
+
+/* Стили для изображений в карточках */
+.frame2 img, .frame3 img, .frame4 img, .frame5 img {
+    border-radius: 5px; /* Скругление углов изображений */
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #489DFF; /* Фон кнопки */
+    color: white; /* Цвет текста на кнопке */
+    border: none; /* Убираем границы кнопки */
+    padding: 5px 20px; /* Внутренние отступы кнопки */
+    margin: 10px 0; /* Внешние отступы кнопки */
+    cursor: pointer; /* Курсор при наведении */
+    border-radius: 5px; /* Скругление углов кнопки */
+}
+
+button h4 {
+    margin: 0; /* Убираем внешний отступ у заголовка внутри кнопки */
+    font-size: 13px; /* Размер шрифта заголовка внутри кнопки */
+    padding: 8px 25px; /* Внутренний отступ внутри кнопки */
+}
+
+button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
+/* Стили для футера */
+.footer {
+    display: flex; /* Использование flexbox для футера */
+    justify-content: center; /* Центровка по горизонтали */
+    align-items: center; /* Центровка по вертикали */
+    background-color: #FFFFFF; /* Белый фон футера */
+    padding: 5px; /* Внутренние отступы */
+    margin: 5px 5px 20px 5px; /* Отступы: снизу 20px, сверху, слева и справа по 5px */
+}
+
+/* Стили для линии в футере */
+.rectangle2 {
+    width: 552px; /* Ширина линии */
+    height: 1px; /* Высота линии */
+    background-color: #F3F3F3; /* Цвет линии */
+    margin: 20px auto; /* Центровка по горизонтали с отступом сверху */
+}
+
+/* Стили для абзацев в футере */
+footer p {
+    color: #525F7F; /* Цвет текста в абзаце */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: poppins; /* Шрифт для текста */
+    font-weight: 300; /* Толщина шрифта */
+    font-size: 13px;
+}
+
+/* Стили для ссылок внутри абзацев */
+p a {
+    color: #489DFF; /* Цвет текста ссылки */
+    text-decoration: none; /* Убирает подчеркивание ссылки */
+}
+
+p a:hover {
+    text-decoration: underline; /* Добавляет подчеркивание при наведении */
+    color: #0056b3; /* Цвет текста при наведении */
+}
+
+/* Стили для иконок в футере */
+.icons {
+    display: flex; /* Использование flexbox для иконок */
+    flex-wrap: nowrap; /* Иконки не будут переноситься на следующую строку */
+    justify-content: center; /* Центровка иконок по горизонтали */
+    gap: 12px; /* Отступ между иконками */
 }
